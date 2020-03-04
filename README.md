@@ -1,5 +1,5 @@
-# EC500 Homework 4: Video
-Justin Morgan's EC500 Homework 4 Repo
+# EC500 Homework 5: Rest API
+Justin Morgan's EC500 Homework 5 Repo
 
 # Assignment Screenshot (For Easy Access)
 <p align="center">
