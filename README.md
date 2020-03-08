@@ -3,7 +3,7 @@ Justin Morgan's EC500 Homework 5 Repo
 
 # Assignment Screenshot (For Easy Access)
 <p align="center">
-<img src="./resources/AssignmentImage.png" width="55%" />
+<img src="./resources/AssignmentImageRest.png" width="55%" />
 </p>
 
 # How Does it Work?
@@ -14,9 +14,8 @@ I AM NOT RESPONSIBLE FOR THE IMAGES RETURNED BY TWEEPY SEARCH. Salacious/Inappro
 
 FOR THE REST API:
 Navigate to the DNS address ec2-3-17-69-167.us-east-2.compute.amazonaws.com:8080 (SUBJECT TO CHANGE UPON STARTING INSTANCE)
-and, upon being greeted with the input text field, enter in search terms separated by commas. After clicking submit, a download will be started for a zip which will contain the video files for each search term. AGAIN, I AM NOT RESPONSIBLE FOR THE IMAGES RETURNED BY TWEEPY SEARCH.
 
 # Example Image of REST API
 <p align="center">
-<img src="./resources/example.png" width="55%" />
+<img src="./resources/exampleRest.png" width="55%" />
 </p>
