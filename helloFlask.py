@@ -9,11 +9,14 @@ api = Api(app)
 
 data = 0
 
-@app.route('/', methods=['GET', 'POST'])
+HOST = '0.0.0.0'
+PORT = 8080
+
+@app.route('/', methods=['GET', 'POST'], host=HOST)
 def mainPage():
     return render_template('login.html')
 
-@app.route('/login', methods=['GET', 'POST'])
+@app.route('/login', methods=['GET', 'POST'], host=HOST)
 def download_all():
     data = request.form['searchTerms']
     searchList = (str(data)).split(',')
@@ -29,12 +32,5 @@ def download_all():
             attachment_filename= 'videos.zip',
             as_attachment = True)
 
-# @app.route('/', methods=['GET', 'POST'])
-# class HelloWorld(Resource):
-#     # def get(self):
-#     #     return redirect('static/labradoodle.mp4')
-#     uploads = os.path.join(current_app.root_path, app.config['UPLOAD_FOLDER'])
-#     return send_from_directory(directory=uploads, filename=filename)
-
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host=HOST, port=PORT)
