@@ -12,7 +12,11 @@ works best for search results that could typically return a lot of images, which
 
 I AM NOT RESPONSIBLE FOR THE IMAGES RETURNED BY TWEEPY SEARCH. Salacious/Inappropriate content returned by the search for seemingly benign search terms is because the search goes by tweet text content. Twitter is full of NSFW content and so please be wary that inappropriate/weird images could be returned by the program. Sometimes the images have nothing to do with the search term because the tweet itself contained the term.
 
-# Example Image
+FOR THE REST API:
+Navigate to the DNS address ec2-3-17-69-167.us-east-2.compute.amazonaws.com:8080 (SUBJECT TO CHANGE UPON STARTING INSTANCE)
+and, upon being greeted with the input text field, enter in search terms separated by commas. After clicking submit, a download will be started for a zip which will contain the video files for each search term. AGAIN, I AM NOT RESPONSIBLE FOR THE IMAGES RETURNED BY TWEEPY SEARCH.
+
+# Example Image of REST API
 <p align="center">
 <img src="./resources/example.png" width="55%" />
 </p>

@@ -23,6 +23,7 @@ def processVideos(listofterms):
     if os.path.exists("resources/imageGen/.DS_Store"):
         os.remove("resources/imageGen/.DS_Store")
 
+    # Sets the number of tweets to search through for images
     numTweets = 100
 
     # Create a list of lists of the function arguments required to starmap
@@ -39,9 +40,13 @@ def processVideos(listofterms):
 
     # Run multiprocessing on the arguments
     try:
+        # Create the pool, each process is one search term
         p = Pool(len(listofterms))
+        # Map the argument array to asynchronous processes and run
         p.starmap_async(searchAndMakeVideo, videoFunctionArguments)
+        # Close the pool and join the processes (wait for completion before zip file download)
         p.close()
         p.join()
+        # If the tweepy rate has been exceeded then quit (Occurs on any tweep error, not just rate limit)
     except tweepy.error.TweepError:
         sys.exit("Tweepy request rate limit exceeded. Quitting.\n")
